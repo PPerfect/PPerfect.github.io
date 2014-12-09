@@ -1,0 +1,377 @@
+﻿html, body {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/PP_BG_dark_grey_wave.jpg");
+    background-repeat: repeat;
+}
+
+html, body, div, span, header, footer, main, aside, a, ul, li, nav, section, article, h1, h2, p, img, figure, aside, small, time {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#top-header, .footer, .content{
+    background-color: rgba(255,255,255,0.6);
+    width: 90%;
+    height: 90%;
+    position: relative;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    border-radius: 12px;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*CLEARFIX*/
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:before, .clearfix:after {
+    display: block;
+    content: " ";
+}
+
+.clearfix:after {
+    height: 0;
+    clear: both;
+}
+
+/*BODY HEADER*/
+#top-logo {
+    display: inline;
+    float: left;
+    margin: 6px;
+}
+
+#top-header h1, #top-header h2 {
+
+    color: #303030;
+    line-height: 4;
+}
+
+#top-nav {
+    background-color: rgba(5,5,5,0.7);
+    padding: 5px ;
+    border-radius: 0px 0px 12px 12px;
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}
+
+#top-nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+li a{
+    text-decoration: none;
+    background-color: rgba(100,100,100,0.8);
+    color: aliceblue;
+    padding: 20px;
+}
+li a:hover{
+    color: greenyellow;
+    text-decoration: none;
+}
+li a:visited{
+    color: greenyellow;
+    text-decoration: none;
+}
+#top-nav li:nth-child(5),#top-nav li:nth-child(6){
+    position: relative;
+    float: right;
+    margin-right: 12px;
+
+}
+
+#container h3 {
+    font-size: 50px;
+    font-family: Arial, Helvetica;
+    margin: auto auto;
+    text-align: center;
+    color: dimgrey;
+    padding: 30px;
+}
+#imagesView, aside {
+    margin: 0px 100px 50px 100px;
+}
+
+#category-wrapper, #albums-wrapper, #photos-wrapper , aside{
+    margin: auto auto;
+    text-align: center;
+    margin: 20px 100px 20px 100px ;
+}
+
+#category-wrapper>div, #albums-wrapper>div, #photos-wrapper>div, aside>li, .albums>ul{
+    margin: 50px;
+    border-radius: 12px;
+    border: solid #ffffff 5px;
+    padding-top: 180px;
+    font-size: 28px;
+}
+
+#photo-viewer {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.albums{
+    margin: 0px 100px 0px 100px;
+}
+
+aside>li, .albums>ul {
+    padding-top: 40px;
+
+}
+
+.albums>ul{
+
+    margin: 0px 50px 50px 50px;
+}
+
+.albums>ul:hover{
+    -webkit-animation: myAlbums 3s infinite linear;
+    background-color: rgba(50,50,50,0.5);
+}
+@-webkit-keyframes myAlbums{
+
+    from { background-image: url("../images/album%20tumbnail2.jpg");}
+
+}
+.special-album{
+    background-color: transparent;
+}
+
+
+#login-frm, #register-frm {
+    text-align: right;
+
+}
+
+#login-frm label, #register-frm label {
+    display: block;
+    color: ghostwhite;
+}
+
+.login-input, .register-input{
+    color: #303030;
+}
+input:focus{
+    background-color: lightyellow;
+    outline: none;
+}
+
+#reg-btn,#login-btn{
+    background-color: rgba(100,100,100,0.8);
+    color: aliceblue;
+    padding: 5px;
+    border: solid 1px #cccccc;
+}
+
+#reg-btn:hover, #login-btn:hover{
+    background-color: greenyellow ;
+    color: #303030;
+    border: solid 2px #303030;
+}
+
+#user-greeting{
+    color: aliceblue;
+    margin-right: 10px;
+    padding: 10px;
+    float: right;
+    font-size: 25px;
+    background-color: rgba(50,50,50,0.8);
+    border-radius: 10px;
+}
+
+#imagesView, aside>li, .category, .album, .photo, .albums>ul  {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/*css whriten from js view If don like can be canget ;)*/
+.category, .album, .photo, aside>li, .albums>ul {
+    word-wrap: break-word;
+    color: dimgrey;
+    font-weight: bold;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    /*background: linear-gradient(top, rgba(0,0,0,0.84) 0%,rgba(0,0,0,0) 100%);*/
+    background-image: url("../images/album%20tumbnail.jpg");
+    /*float: left;*/
+}
+
+.albums>ul{
+    color: aliceblue;
+    padding-top: 80px;
+}
+
+.categoryName>button {
+    background-color: grey;
+    border: 2px solid #606060;
+    outline: none;
+    border-radius: 8px;
+}
+
+aside>li{
+    background-image: url("../images/album%20tumbnail2.jpg");
+}
+
+.category:hover, .album:hover, .photo:hover {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+
+    -moz-transform:scale(0.95);
+    -webkit-transform:scale(0.95);
+    -o-transform:scale(0.95);
+    transform:scale(0.95);
+    /*-webkit-text-fill-color: rgba(255,255,255,0.1);
+    -webkit-background-clip: border-box;*/
+    /*Should discuse the way that pictures hides*/
+}
+
+#top-header{
+    height: 300px;
+    -webkit-animation: myfirst 5s infinite linear; /* Chrome, Safari, Opera */
+    animation: myfirst 10s  infinite;
+    background-repeat: no-repeat;
+    background-size : 100% auto
+}
+
+@-webkit-keyframes myfirst {
+
+    from { background-image: url("../images/Relax_baner.jpg");}
+    to { background-image: url("../images/Dominican_baner.jpg");}
+    to { background-image: url("../images/Spa_baner.jpg");}
+
+}
+
+.comment-wrapper{
+    width: 50%;
+    border:1px solid;
+    margin-top:5px;
+    margin-bottom: 5px;
+    padding:10px;
+    display: block;
+    border-radius:5px;
+    margin-left:30%;
+    background-color: aliceblue;
+    text-wrap: normal;
+}
+
+#album-comments-wrapper{
+background-color: #cccccc;
+    width: 95%;
+    padding:30px;
+    margin-left: 2%;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.comment-content{
+    word-wrap: break-word;
+}
+
+#add-album-comment-wrapper{
+    border:1px solid;
+    border-radius:3px;
+    background-color: aliceblue;
+    width:50%;
+    margin-left:30%;
+    padding: 10px;
+}
+
+#add-comment-content{
+    border-radius: 6px;
+    width: 90%;
+}
+
+#file-select{
+    display: inline;
+    /* width: 91px; */
+    margin-left: 34%;
+    border-radius: 10px;
+    border: solid;
+}
+
+#upload-btn{
+    width: 91px;
+    border: solid;
+    border-radius: 10px;
+}
+
+#footer-line{
+    margin-left:30%;
+}
+
+#album-rating{
+    margin: 0 auto;
+    display: inline;
+    margin-left: 2%;
+}
+#vote-album-wrapper{
+    display:inline;
+    margin-left:2%;
+}
+
+#vote-select{
+    height: 27px;
+}
+
+#back-to-album-button, #previous-button, #next-button, #delete-button, #back-to-album-button, #download-button {
+      display: inline-block;
+      background-color: #999;
+      color: #fff;
+      font-size: 0.8em;
+      font-family: Courier, sans-serif;
+      padding: 0.5em 0.5em ;
+      text-decoration: none;
+      text-transform: uppercase;
+      border-radius: 0.5em;
+      border-bottom: 0.25em solid #606060;
+      -moz-transition: 0.1s;
+      -webkit-transition: 0.1s;
+      transition: 0.1s;
+      box-shadow: 4px 2px 3px #ccc;
+      position: relative;
+      margin-left: 5px;
+      margin-top: 5px;
+}
+
+#previous-button {
+    margin-left: 15px;
+}
+
+#back-to-album-button:hover, #previous-button:hover, #next-button:hover, #delete-button:hover, #back-to-album-button:hover, #download-button:hover {
+     background-color: #606060;
+     border-bottom-width: 0;
+     top: 0.2em;
+}
+
+#download-button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer {
+    margin: auto;
+    text-align: center;
+}
